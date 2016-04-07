@@ -6,6 +6,10 @@ module.exports = {
 };
 
 function getPath(filePath, partner) {
+  if (!partner) {
+    return filePath;
+  }
+
   const regex = /^(.+)\/([a-zA-Z-_]+.\w+)$/;
   const match = filePath.match(regex);
   if (match) {
@@ -25,6 +29,10 @@ function getPath(filePath, partner) {
 }
 
 function getPathSync(filePath, partner) {
+  if (!partner) {
+    return filePath;
+  }
+
   const regex = /^(.+)\/([a-zA-Z-_]+.\w+)$/;
   const match = filePath.match(regex);
   if (match) {

@@ -9,11 +9,17 @@ module.exports = function(source) {
   const callback = this.async();
 
   if (!partner) {
-    return source;
+    return callback(null, source);
   }
 
   getPath(filePath, partner)
     .then((partnerPath) => {
+      const isSamePath = partnerPath === filePath;
+
+      if (isSamePath) {
+        return callback(null, source);
+      }
+
       fs.readFile(partnerPath, (err, fileStream) => {
         if (err) {
           return callback(err);
