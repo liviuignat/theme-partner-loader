@@ -11,11 +11,11 @@
     - Header.scss
 
 
-When trying to the JavaScript file `require('components/Header/Header.js')`
+When trying to load the JavaScript file `require('components/Header/Header.js')`
 - If `process.env.PARTNER` is `nothing` it will load `components/Header/Header.js`
 - If `process.env.PARTNER` is `vodafone` it will load `components/partners/vodafone/Header/Header.js`
 
-When trying to the SASS file `require('components/Header/Header.scss')`
+When trying to load the SASS file `require('components/Header/Header.scss')`
 - If `process.env.PARTNER` is `nothing` it will load `components/Header/Header.scss`
 - If `process.env.PARTNER` is `vodafone` it will load `components/partners/vodafone/Header/Header.scss`
 
