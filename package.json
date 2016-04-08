@@ -1,11 +1,24 @@
 {
+  "author": "Liviu Ignat <liviu@ignat.email>",
+  "license": "ISC",
   "name": "theme-partner-loader",
   "version": "0.0.1",
-  "description": "",
+  "description": "Webpack loader for loading partner theme specific files",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liviuignat/theme-partner-loader.git"
+  },
+  "keywords": [
+    "webpack",
+    "loader",
+    "theme",
+    "partner"
+  ],
+  "bugs": {
+    "url": "https://github.com/liviuignat/theme-partner-loader/issues"
+  },
+  "homepage": "https://github.com/liviuignat/theme-partner-loader.git"
 }
